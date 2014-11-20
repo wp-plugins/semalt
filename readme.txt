@@ -1,4 +1,4 @@
-=== Facebook Comments ===
+=== Semalt Blocker ===
 Contributors: alexmoss, rishilakhani, rhyswynne
 Donate link:  http://peadig.com/go/facebook-comments-paypal/
 License: GPLv3
