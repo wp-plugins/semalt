@@ -76,7 +76,7 @@ function semalt_options() {
                  </tr>
              </table>
              <p>This plugin was an idea by <a href="http://refugeeks.com/" target="_blank">Rishi Lakhani</a> and developed by <a href="http://firecask.com/" target="_blank">Alex Moss</a> and a little help from <a href="http://www.winwar.co.uk/" target="_blank">Rhys Wynne</a>. Please tweet about it!
-                <br /><br /><a href="https://twitter.com/intent/tweet/update?text=I've%20just%20used%20the%20%23Semalt%20Redirect%20Manager%20to%20stop%20%23semaltspam%20from%20my%20site%3A%20http%3A%2F%2Fpeadig.com%2Fwordpress-plugins%2Fsemalt%2F%20via%20%40alexmoss%20%40rishil%20%23WordPress" class="twitter-hashtag-button" data-size="large" data-related="alexmoss">Tweet</a>
+                <br /><br /><a href="https://twitter.com/intent/tweet/update?text=I've%20just%20used%20the%20%23Semalt%20Redirect%20Manager%20to%20stop%20%23semaltspam%20from%20my%20site%3A%20http%3A%2F%2Fpeadig.com%2Fwordpress-plugins%2Fsemalt-blocker%2F%20via%20%40alexmoss%20%40rishil%20%23WordPress" class="twitter-hashtag-button" data-size="large" data-related="alexmoss">Tweet</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
             </p>
             <p class="submit">

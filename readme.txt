@@ -5,7 +5,7 @@ License: GPLv3
 Tags: seo, semalt, redirect
 Requires at least: 3.1
 Tested up to: 4.0
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 We all know how annoying it is when we see Semalt mess up our analytics data. This plugin helps you stop that from happening by referring Semalt's crawler elsewhere! Based on an idea by Rishi Lakhani.
 
@@ -15,7 +15,7 @@ We all know how annoying it is when we see Semalt mess up our analytics data. Th
 
 Simply install the plugin and follow the instructions on the Settings page.
 
-* [Semalt](http://peadig.com/wordpress-plugins/semalt/) Plugin homepage.
+* [Semalt](http://peadig.com/wordpress-plugins/semalt-blocker/) Plugin homepage.
 * Rishi's post about [understanding referer spam](http://refugeeks.com/referrer-spam-in-your-analytics).
 * More [WordPress Plugins](http://peadig.com/wordpress-plugins/).
 * Peadig: A [WordPress Bootstrap](http://peadig.com/) theme framework.
@@ -31,14 +31,14 @@ This section describes how to install the plugin and get it working.
 
 == Changelog ==
 
-= 1.1.1 =
-* Used wp_redirect native function.
+= 1.0.1 =
 
-= 1.1 =
-* Cleaned up a lot of the code to make it meet WP Coding Standards.
-* Fixed a few WP_DEBUG notices.
-* Called it earlier, to stop notices displaying.
+* Tweet link update in admin
 
 = 1.0 =
 
+* Used wp_redirect native function.
+* Cleaned up a lot of the code to make it meet WP Coding Standards.
+* Fixed a few WP_DEBUG notices.
+* Called it earlier, to stop notices displaying.
 * Initial release
