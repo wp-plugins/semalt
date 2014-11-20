@@ -3,7 +3,7 @@
 Plugin Name:  Semalt Redirect Manager
 Plugin URI:   http://peadig.com/wordpress-plugins/semalt/?utm_source=WordPress&utm_medium=Admin&utm_campaign=Semalt
 Description:  We all know how annoying it is when we see Semalt mess up our analytics data. This plugin helps you stop that from happening by referring Semalt's crawler elsewhere! Based on an idea by Rishi Lakhani.
-Version:      0.1
+Version:      1.0
 Author: Alex Moss
 Author URI: http://peadig.com/author/alex-moss/
 License: GPL v3
