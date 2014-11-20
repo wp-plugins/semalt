@@ -16,6 +16,7 @@ We all know how annoying it is when we see Semalt mess up our analytics data. Th
 Simply install the plugin and follow the instructions on the Settings page.
 
 * [Semalt](http://peadig.com/wordpress-plugins/semalt/) Plugin homepage.
+* Rishi's post about [understanding referer spam](http://refugeeks.com/referrer-spam-in-your-analytics).
 * More [WordPress Plugins](http://peadig.com/wordpress-plugins/).
 * Peadig: A [WordPress Bootstrap](http://peadig.com/) theme framework.
 
