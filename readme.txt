@@ -5,7 +5,7 @@ License: GPLv3
 Tags: seo, semalt, redirect
 Requires at least: 3.1
 Tested up to: 4.0
-Stable tag: 1.1
+Stable tag: 1.1.1
 
 We all know how annoying it is when we see Semalt mess up our analytics data. This plugin helps you stop that from happening by referring Semalt's crawler elsewhere! Based on an idea by Rishi Lakhani.
 
@@ -31,10 +31,11 @@ This section describes how to install the plugin and get it working.
 
 == Changelog ==
 
-= 1.1 =
+= 1.1.1 =
 
 * Added buttons-for-websites.com
 * Added ability to enter your own domains as a list
+* Removed content output test
 
 = 1.0.1 =
 
