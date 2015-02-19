@@ -12,6 +12,7 @@ function semalt_init() {
     $new_options = array(
         'enabled' => 'on',
         'url' => 'http://google.com/',
+        'domains' => 'semalt.com'. PHP_EOL .'buttons-for-websites.com',
         );
     add_option( 'semalt', $new_options );
 }
@@ -70,6 +71,11 @@ function semalt_options() {
                    <table class="form-table">
                     <tr valign="top"><th scope="row"><label for="fbml">Enabled</label></th>
                      <td><input id="enabled" name="semalt[enabled]" type="checkbox" value="on" <?php checked( 'on', $options['enabled'] ); ?> /></td>
+                 </tr>
+                 <tr valign="top"><th scope="row"><label for="url">Domains to block</label></th>
+                     <td>
+                      <textarea rows="6" cols="50" id="domains" name="semalt[domains]"><?php echo $options['domains']; ?></textarea>
+                      <p>Enter one domain per line, no need for http:// - eg <code>semalt.com</code>.</p><p>Also note that semalt.com and buttons-for-websites.com are listed above. <strong>Do not remove them</strong> from the list unless you want their crawlers to reach your site!</p>
                  </tr>
                  <tr valign="top"><th scope="row"><label for="url">URL to redirect to</label></th>
                      <td><input id="url" type="text" name="semalt[url]" value="<?php echo $options['url']; ?>" /></td>
