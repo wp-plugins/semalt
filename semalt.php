@@ -3,7 +3,7 @@
 Plugin Name:  Semalt Redirect Manager
 Plugin URI:   http://peadig.com/wordpress-plugins/semalt/?utm_source=WordPress&utm_medium=Admin&utm_campaign=Semalt
 Description:  We all know how annoying it is when we see Semalt mess up our analytics data. This plugin helps you stop that from happening by referring Semalt's crawler elsewhere! Based on an idea by Rishi Lakhani.
-Version:      1.1.2
+Version:      1.1.3
 Author: Alex Moss
 Author URI: http://peadig.com/author/alex-moss/
 License: GPL v3
@@ -24,20 +24,45 @@ if ( is_admin() && ( !defined( 'DOING_AJAX' ) || !DOING_AJAX ) ) {
 	require 'class-admin.php';
 } else {
 	//ADD SEMALT REDIRECT
+/*
 	function semalt_redir() {
 		$options = get_option( 'semalt' );
-		if ( isset( $options['enabled']) && !preg_match('/'.$_SERVER['SERVER_NAME'].'/', $_SERVER['HTTP_REFERER'])) {
+		if ( isset( $options['enabled'] ) && $options['enabled'] ) {
+
 			if(isset($_SERVER['HTTP_REFERER'])) {
+
 				$referrer = $_SERVER['HTTP_REFERER'];
+
+				if ( preg_match( "/semalt.com/", $referrer ) ) {
+					$location = $options['url'];
+					wp_redirect( $location );
+					exit;
+				}
+			
+			}
+		}
+	}
+*/
+
+
+
+
+	function semalt_redir() {
+		$options = get_option( 'semalt' );
+		if ( isset( $options['enabled']) && isset($_SERVER['HTTP_REFERER'])) {
+				$referrer = $_SERVER['HTTP_REFERER'];
+				$domain  = $_SERVER['SERVER_NAME'];
 				foreach(explode("\n", $options['domains']) as $line) {
 					$line = preg_replace('/\s+/', '', $line);
+					if (!empty($line)) {
 					$line = '/'.$line.'/';
-					if ( preg_match( $line, $referrer ) && !empty($line) ) {
+					if ( preg_match( $line, $referrer ) && !preg_match($domain, $line) ) {
 						$location = $options['url'];
 						wp_redirect( $location );
 						exit;
 					}
 				}
+				
 			}
 		}
 	}
